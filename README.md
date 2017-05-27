@@ -24,6 +24,7 @@ development.
 * [HiPLAR](https://developer.nvidia.com/hiplar) delivers high performance linear algebra (LA) routines for the R platform for statistical computing using the latest software libraries for heterogeneous architectures.
 * [IMSL](https://developer.nvidia.com/imsl-fortran-numerical-library) is a comprehensive set of mathematical and statistical functions that offloads work to GPUs.
 * [JCuda](http://www.jcuda.org/) is Java bindings for CUDA.
+* [Libdnn](https://github.com/naibaf7/libdnn) is a universal convolution implementation supporting CUDA and OpenCL.
 * [MAGMA](https://developer.nvidia.com/magma) is a collection of next gen linear algebra routines. Designed for heterogeneous GPU-based architectures. Supports current LAPACK and BLAS standards.
 * [MVGRAPH](https://developer.nvidia.com/nvgraph) is a GPU-accelerated graph analytics library.
 * [Moderngpu](https://github.com/moderngpu/moderngpu) is a productivity library for general-purpose computing on GPUs. It is a header-only C++ library written for CUDA. The unique value of the library is in its accelerated primitives for solving irregularly parallel problems.
@@ -36,6 +37,7 @@ development.
 * [R+GPU](http://brainarray.mbni.med.umich.edu/brainarray/rgpgpu/) enables GPU Computing in the R Statistical Environment.
 * [TensorRT](https://developer.nvidia.com/tensorrt) is a high performance neural network inference library for deep learning applications.
 * [Thrust](https://github.com/thrust/thrust) - A parallel algorithms library whose main goal is programmer productivity and rapid development. But if your main goal is reaching the best possible performance, you are advised to use a more low-level library, such as CUDPP or chag::pp.
+* [Tiny-dnn](https://github.com/tiny-dnn/tiny-dnn) is a header only, dependency-free deep learning framework in C++11.
 * [Vexcl](https://github.com/ddemidov/vexcl) is a C++ vector expression template library for OpenCL/CUDA.
 
 ## [cuDNN supported frameworks](https://developer.nvidia.com/deep-learning-frameworks)
