@@ -3,40 +3,6 @@
 This is a list of useful libraries and resources for CUDA
 development.
 
-## Presentations
-
-* [Optimizing Parallel Reduction in CUDA](https://docs.nvidia.com/cuda/samples/6_Advanced/reduction/doc/reduction.pdf) - In this presentation it is shown how a fast, but relatively simple, reduction
-algorithm can be implemented.
-
-* [CUDA C/C++ BASICS](https://www.olcf.ornl.gov/wp-content/uploads/2013/02/Intro_to_CUDA_C-TS.pdf) - This presentations explains the concepts of CUDA kernels,
-memory management, threads, thread blocks, shared memory, thread
-syncrhonization. A simple addition kernel is shown, and an optimized stencil
-1D stencil kernel is shown.
-
-* [Advanced CUDA - Optimizing to Get 20x
-  Performance](https://www.nvidia.com/content/cudazone/download/Advanced_CUDA_Training_NVISION08.pdf) - This presentation covers: Tesla 10-Series Architecture, Particle
-  Simulation Example, Host to Device Memory Transfer, Asynchronous
-  Data Transfers, OpenGL Interoperability, Shared Memory, Coalesced
-  Memory Access, Bank Conflicts, SIMT, Page-locked Memory, Registers,
-  Arithmetic Intensity, Finite Differences Example, Texture Memory.
-
-* [Advanced CUDA Webinar - Memory
-  Optimizations](http://on-demand.gputechconf.com/gtc-express/2011/presentations/NVIDIA_GPU_Computing_Webinars_CUDA_Memory_Optimization.pdf) - This presentation covers: Asynchronous Data Transfers , Context
-  Based Synchronization, Stream Based Synchronization, Events, Zero
-  Copy, Memory Bandwidth, Coalescing, Shared Memory, Bank Conflicts,
-  Matrix Transpose Example, Textures.
-
-* [Better Performance at Lower
-  Occupancy](http://www.nvidia.com/content/GTC-2010/pdfs/2238_GTC2010.pdf) - Excellent presentation where it is shown that we can achieve better
-  performance by assigning more parallel work to each thread and by using
-  Instruction-level parallelism. Covered topics are:
-  Arithmetic Latency, Arithmetic Throughput, Little's Law,
-  Thread-level parallelism(TLP), Instruction-level parallelism(ILP),
-  Matrix Multiplication Example.
-
-* [Fun With Parallel Algorithms. Segmented Scan. Neutral territory method](http://www.cs.cmu.edu/afs/cs/academic/class/15418-s12/www/lectures/24_algorithms.pdf) - In these slides, it is shown how a segmented scan can easily be implemented using a variation of a normal scan.
-
-* [GPU/CPU Programming for Engineers - Lecture 13](http://www.ce.jhu.edu/dalrymple/classes/602/Class13.pdf) - This lecture provides a good walkthrough of all the different memory types: Global Memory, Texture Memory, Constant Memory, Shared Memory, Registers and Local Memory.  
 
 ## Libraries
 
@@ -62,6 +28,65 @@ syncrhonization. A simple addition kernel is shown, and an optimized stencil
   [demonstrated](https://newq.net/archived/www.cse.chalmers.se/pub/pp/stream_compaction_pres.pdf)
   that their implementation of Stream Compaction and Prefix Sum are
   the fastest ones available!
+  
+* [cuDNN](https://developer.nvidia.com/cudnn) - A GPU-accelerated library of primitives for deep neural networks providing highly tuned implementations for standard routines such as forward and backward convolution, pooling, normalization, and activation layers.
+
+* [cuFFT](https://developer.nvidia.com/cufft) provides a simple interface for computing FFTs up to 10x faster, without having to develop your own custom GPU FFT implementation.
+
+* [AmgX](https://developer.nvidia.com/amgx) is a simple path to accelerated core solvers, providing up to 10x acceleration in the computationally intense linear solver portion of simulations, and is very well suited for implicit unstructured methods.
+
+* [nvGRAPH](https://developer.nvidia.com/nvgraph) is a GPU-accelerated graph analytics library.
+
+* [TensorRT](https://developer.nvidia.com/tensorrt) is a high performance neural network inference library for deep learning applications.
+
+* [NPP](https://developer.nvidia.com/npp)  is a GPU accelerated library with a very large collection of 1000's of image processing primitives and signal processing primitives.
+
+* [CULA](https://developer.nvidia.com/em-photonics-cula-tools) is a GPU-accelerated linear algebra library by EM Photonics, that utilizes CUDA to dramatically improve the computation speed of sophisticated mathematics.
+
+* [MAGMA](https://developer.nvidia.com/magma) is a collection of next gen linear algebra routines. Designed for heterogeneous GPU-based architectures. Supports current LAPACK and BLAS standards.
+
+* [IMSL](https://developer.nvidia.com/imsl-fortran-numerical-library) is a comprehensive set of mathematical and statistical functions that offloads work to GPUs.
+
+* [cuSOLVER](https://developer.nvidia.com/cusolver) is a collection of dense and sparse direct solvers which deliver significant acceleration for Computer Vision, CFD, Computational Chemistry, and Linear Optimization applications.
+
+* [cuSPARSE](https://developer.nvidia.com/cusparse) is a library provides a collection of basic linear algebra subroutines used for sparse matrices that delivers over 8x performance boost.
+
+* [cuBLAS](https://developer.nvidia.com/cublas) is a GPU-accelerated version of the complete standard BLAS library that delivers 6x to 17x faster performance than the latest MKL BLAS.
+
+* [ArrayFire](https://developer.nvidia.com/arrayfire) is a comprehensive, open source GPU function library. Includes functions for math, signal and image processing, statistics, and many more. Interfaces for C, C++, Java, R and Fortran.
+
+* [CUDA Math](https://developer.nvidia.com/cuda-math-library) is an industry proven, highly accurate collection of standard mathematical functions, providing high performance on NVIDIA GPUs.
+
+* [NVBIO](https://developer.nvidia.com/NVBIO) is a GPU-accelerated C++ framework for High-Throughput Sequence Analysis for both short and long read alignment.
+
+* [GUNROCK](http://gunrock.github.io/) is a GPU library for graph analytics that couples an expressive, powerful programming model with a high-performance implementation.
+
+* [NVIDIA VIDEO CODEC SDK](https://developer.nvidia.com/nvidia-video-codec-sdk) is an accelerated video compression with the NVIDIA Video Codec SDK. 
+
+* [HiPLAR](https://developer.nvidia.com/hiplar) delivers high performance linear algebra (LA) routines for the R platform for statistical computing using the latest software libraries for heterogeneous architectures.
+
+* [GPP](https://developer.nvidia.com/geometric-performance-primitives-gpp) is a computational geometry engine that is optimized for GPU acceleration, and can be used in advanced Graphical Information Systems (GIS), Electronic Design Automation (EDA), computer vision, and motion planning solutions.
+
+* [PARALUTION](https://developer.nvidia.com/paralution) is a library for sparse iterative methods with special focus on multi-core and accelerator technology such as GPUs.
+
+* [PyCUDA](https://mathema.tician.de/software/pycuda/) lets you access Nvidia‘s CUDA parallel computation API from Python.
+
+* [JCuda](http://www.jcuda.org/) is Java bindings for CUDA.
+
+* [R+GPU](http://brainarray.mbni.med.umich.edu/brainarray/rgpgpu/) enables GPU Computing in the R Statistical Environment.
+ 
+
+## [cuDNN supported frameworks](https://developer.nvidia.com/deep-learning-frameworks)
+
+* [Caffe](http://caffe.berkeleyvision.org/) is a deep learning framework made with expression, speed, and modularity in mind. 
+* [Caffe2](https://developer.nvidia.com/caffe2) is a deep learning framework enabling simple and flexible deep learning. 
+* [CNTK](https://www.microsoft.com/en-us/research/product/cognitive-toolkit/)  is a unified deep-learning toolkit from Microsoft Research that makes it easy to train and combine popular model types across multiple GPUs and servers.
+* [TensorFlow](http://tensorflow.org/) is a software library for numerical computation using data flow graphs, developed by Google’s Machine Intelligence research organization.
+* [theano](http://deeplearning.net/software/theano/) is a math expression compiler that efficiently defines, optimizes, and evaluates mathematical expressions involving multi-dimensional arrays.
+* [torch](http://torch.ch/) is a scientific computing framework that offers wide support for machine learning algorithms.
+* [mxnet](https://github.com/dmlc/mxnet) is a deep learning framework designed for both efficiency and flexibility that allows you to mix the flavors of symbolic programming and imperative programming to maximize efficiency and productivity.
+* [Chainer](http://chainer.org/) is a deep learning framework that’s designed on the principle of define-by-run. Unlike frameworks that use the define-and-run approach, Chainer lets you modify networks during runtime, allowing you to use arbitrary control flow statements.
+* [Keras](http://chainer.org/) is a minimalist, highly modular neural networks library, written in Python, and capable of running on top of either TensorFlow or Theano. Keras was developed with a focus on enabling fast experimentation.
 
 ## Papers
 
@@ -104,6 +129,42 @@ Harris](https://docs.nvidia.com/cuda/samples/6_Advanced/reduction/doc/reduction.
 can be made faster on Kepler.
 
 * [GPU Pro Tip: Fast Histograms Using Shared Atomics on Maxwell](https://devblogs.nvidia.com/parallelforall/gpu-pro-tip-fast-histograms-using-shared-atomics-maxwell/) - It is shown how we can use shared memory atomics to implement a faster histogram implementation on Maxwell.
+
+
+## Presentations
+
+* [Optimizing Parallel Reduction in CUDA](https://docs.nvidia.com/cuda/samples/6_Advanced/reduction/doc/reduction.pdf) - In this presentation it is shown how a fast, but relatively simple, reduction
+algorithm can be implemented.
+
+* [CUDA C/C++ BASICS](https://www.olcf.ornl.gov/wp-content/uploads/2013/02/Intro_to_CUDA_C-TS.pdf) - This presentations explains the concepts of CUDA kernels,
+memory management, threads, thread blocks, shared memory, thread
+syncrhonization. A simple addition kernel is shown, and an optimized stencil
+1D stencil kernel is shown.
+
+* [Advanced CUDA - Optimizing to Get 20x
+  Performance](https://www.nvidia.com/content/cudazone/download/Advanced_CUDA_Training_NVISION08.pdf) - This presentation covers: Tesla 10-Series Architecture, Particle
+  Simulation Example, Host to Device Memory Transfer, Asynchronous
+  Data Transfers, OpenGL Interoperability, Shared Memory, Coalesced
+  Memory Access, Bank Conflicts, SIMT, Page-locked Memory, Registers,
+  Arithmetic Intensity, Finite Differences Example, Texture Memory.
+
+* [Advanced CUDA Webinar - Memory
+  Optimizations](http://on-demand.gputechconf.com/gtc-express/2011/presentations/NVIDIA_GPU_Computing_Webinars_CUDA_Memory_Optimization.pdf) - This presentation covers: Asynchronous Data Transfers , Context
+  Based Synchronization, Stream Based Synchronization, Events, Zero
+  Copy, Memory Bandwidth, Coalescing, Shared Memory, Bank Conflicts,
+  Matrix Transpose Example, Textures.
+
+* [Better Performance at Lower
+  Occupancy](http://www.nvidia.com/content/GTC-2010/pdfs/2238_GTC2010.pdf) - Excellent presentation where it is shown that we can achieve better
+  performance by assigning more parallel work to each thread and by using
+  Instruction-level parallelism. Covered topics are:
+  Arithmetic Latency, Arithmetic Throughput, Little's Law,
+  Thread-level parallelism(TLP), Instruction-level parallelism(ILP),
+  Matrix Multiplication Example.
+
+* [Fun With Parallel Algorithms. Segmented Scan. Neutral territory method](http://www.cs.cmu.edu/afs/cs/academic/class/15418-s12/www/lectures/24_algorithms.pdf) - In these slides, it is shown how a segmented scan can easily be implemented using a variation of a normal scan.
+
+* [GPU/CPU Programming for Engineers - Lecture 13](http://www.ce.jhu.edu/dalrymple/classes/602/Class13.pdf) - This lecture provides a good walkthrough of all the different memory types: Global Memory, Texture Memory, Constant Memory, Shared Memory, Registers and Local Memory.  
 
 ## Videos
 
